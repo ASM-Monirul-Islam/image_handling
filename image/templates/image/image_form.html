@@ -1,0 +1,10 @@
+{% extends "base.html" %} {% block content %}
+<form action="{% url 'create_image' %}" method="post" enctype="multipart/form-data">
+	{% csrf_token %}
+  <input type="text" name="name" placeholder="Enter the name of the image" />
+  <br />
+  <input type="file" name="image_url" placeholder="Enter the url of the image" />
+  <br />
+  <button type="submit">Add Image</button>
+</form>
+{% endblock content %}
