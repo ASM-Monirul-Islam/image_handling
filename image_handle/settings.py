@@ -129,5 +129,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-MEDIA_URL = '/media/'
+MEDIA_URL = 'https://image-upload-h6qi.onrender.com'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
